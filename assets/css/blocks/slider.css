@@ -1,0 +1,121 @@
+.works {
+  overflow: hidden;
+  position: relative;
+  height: 110vh;
+  padding: 6% 0 0 ;
+}
+.slider {
+  margin: 5% 0 0 0 ;
+  width: 100%;
+  height: 100%;
+  top: 5vh;
+  overflow: visible;
+  transform: rotate(15deg);
+  will-change: transform;
+}
+.slider__bg {
+  transform: rotate(-15deg) ;
+  z-index: -10 !important;
+  position: absolute;
+
+  margin: 10% 0 0 0 ;
+  width: 100%;
+  height: 100%;
+  top: 5vh;
+  overflow: visible;
+  filter: blur(120px) saturate(10);
+  opacity: .3;
+}
+.slider__wrapper {
+  transition:  all .75s cubic-bezier( 0.48, 0.82, 0.63, 0.94 )!important;
+  will-change: transform;
+}
+.slider__item {
+  max-height: 70vh;
+  overflow: hidden;
+  position: relative;
+  cursor: crosshair;
+}
+
+.slider__img {
+  width: 300%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  filter: brightness(80%);
+  left: -100%;
+  position: absolute;
+  transition:  all .75s cubic-bezier( 0.48, 0.82, 0.63, 0.94 )!important;
+  will-change: transform;
+}
+.slider__inner  {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3% 1rem;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+}
+.slider__title {
+  font-size: 40px;
+}
+.slider__title:hover {
+  color: rgb(254,254,254,.95)
+}
+.icon {
+  width: 50px;
+  height: 50px;
+}
+.opened {
+  z-index: 200;
+  transform: rotate(-15deg) scale(1.45) !important;
+  transition: all .4s cubic-bezier( 0.48, 0.82, 0.63, 0.94 );
+  box-shadow: 0 0 10px 100000px rgb(0,0,0,.85);
+}
+
+
+.works__item {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description {
+  position: absolute;
+  top: 40vh;
+  left:8vw;
+  max-width: 24vw;
+}
+.description__logo {
+  font-size: 80px;
+}
+.description__text {
+  font-size: 30px;
+  margin: 5% 0;
+  opacity: .8;
+}
+.hidden {
+  opacity: 0;
+}
+@media screen and (max-width: 620px) {
+  .works {
+    height: 90vh;
+  } 
+  .description__logo {
+    font-size: 64px !important;
+  }
+  .description__text {
+    font-size: 24px;
+  }
+  .description {
+    top: 24vh;
+    left: 4vw;
+    max-width: 10vw;
+  }
+}

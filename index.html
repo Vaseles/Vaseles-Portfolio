@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/libraries/swiper.js/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- <div class="cursor"></div> -->
+  <div class="loader">
+    <span class="loader__span">
+      <span class="loader__de__span"></span>
+    </span>
+  </div>
+
+  <div class="content">
+    <header>
+      <div class="header__one">
+        <div class="header__menu">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="header__two">
+        <div class="header__inner">
+          <a class="header__a header__a__one" href="#home">home</a>
+          <a class="header__a header__a__two" href="#about">about</a>
+          <a class="header__a__three header__a" href="#projects">projects</a>
+          <a class="header__a__four header__a" href="#contacts">contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="home" id="home">
+      <img src="assets/media/images/pexels-tatiana-fet-3367290 (1) 1.png" class="home__img__one" alt=""> 
+      <img src="assets/media/images/pexels-ralph-chang-794548 1.png" class="home__img__two home__image__display" alt="" >
+      <div class="home__item">
+        <div class="home__header">
+          <div class="home__header__left">
+            <a href="#contacts" class="btn"><span class="btn__span">CONTACT</span></a>
+
+            <p>I Prefer to work in a team</p>
+          </div>
+          <div class="home__header__right">
+            <p>django developer 2021-2022</p>
+            <p>react developer 2022 april</p>
+          </div>
+        </div>
+        <div class="home__content">
+          <div class="home__left">
+            <span class="home__left__span home__description__span"></span>
+            <div class="home__left__title">I prefer backend development, mostly using django, 
+              for the front I prefer react</div>
+          </div>
+          <div class="home__right">
+            <span class="home__right__span home__title__span"></span>
+            <div class="home__right__title"> I'm WEB DEVELOPER</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- * about -->
+    <div class="about" id="about">
+      <div class="about__left">
+          <div class="about__thems">
+            <div class="about__horisontal">
+              <p class="about__middle" style="left: 1rem; bottom: 2rem">SASS</p>
+              <p class="about__senior" style="font-size: 74px">django</p>
+              <p class="about__middle" style="font-size: 35px; left: -.6rem;">git</p>
+            </div>
+            <div class="about__vertical">
+              <p class="about__middle mar-10 left bottom" style="left: 6rem; top: 2rem">DjangoRestFramework</p>
+              <p class="about__middle mar-10 left bottom" style="transform: rotate(90deg); top: .4rem; left: 5rem">python</p>
+              <p class="about__middle mar-10 left bottom" style="transform: rotate(90deg);font-size: 50px; top: 1rem; left: 12rem">REACT</p>
+              <p class="about__middle mar-10" style="top: -.6rem; left: 1rem">html/css/javascript</p>
+            </div>
+          </div>
+        </div>
+      <div class="about__right">
+        <img src="assets/media/images/image 1.png" class="filter" alt="">
+          <div class="about__text">
+            <span class="home__left__span about__contact__span"></span>
+            <div class=" home__about__title">MY SKIILS</div>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- ? slider -->
+    <div class=" works" id = "projects">
+      <div class="works__item">
+        <img src="assets/media/images/image 2.png" class="filter" alt="">
+        <div class="description">
+          <div class=" contact__title home__left__title home__about__title description__logo">My works</div>
+          <div class="description__text">
+            active and closed projects
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper slider slider__main">
+        <div class="swiper-wrapper slider__wrapper">
+          
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="40%" style="background-image: url(./assets/media/slider/julijai.png);">
+            </div>
+            <div class="slider__inner">
+              <h2 class = "slider__title">Julijai IT-HUB</h2>
+              <a href="https://github.com/Vaseles/Julijai" target="_blank"><img src="./assets/media/github.png" class="icon" alt=""></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(./assets/media/slider/ficcraft.jpg);">
+            </div>
+            <div class="slider__inner">
+              <h2 class = "slider__title">FICCRAF</h2>
+              <a href = "https://github.com/Vaseles/FICCRAFT" target="_blank"><img src="./assets/media/github.png" class="icon" alt=""></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="40%" style="background-image: url(./assets/media/slider/physic_site.png);">
+            </div>
+            <div class="slider__inner">
+              <h2 class = "slider__title">Physic Learn</h2>
+              <a href = "https://github.com/Vaseles/Physicsite" target="_blank"><img src="./assets/media/github.png" class="icon" alt=""></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(./assets/media/slider/travellBlog.png);">
+            </div>
+            <div class="slider__inner">
+              <h2 class = "slider__title">Travlog</h2>
+              <a href = "https://github.com/Vaseles/trav-log" target="_blank"><img src="./assets/media/github.png" class="icon" alt=""></a>
+            </div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="40%" style="background-image: url(./assets/media/slider/todo.png);">
+            </div>
+            <div class="slider__inner">
+              <h2 class = "slider__title">Todo</h2>
+              <a href = "https://github.com/Vaseles/to-do" target="_blank"><img src="./assets/media/github.png" class="icon" alt=""></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper slider slider__bg">
+        <div class="swiper-wrapper slider__wrapper">
+          
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="40%" style="background-image: url(./assets/media/slider/julijai.png);">
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(./assets/media/slider/ficcraft.jpg);">
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="40%" style="background-image: url(./assets/media/slider/physic_site.png);">
+            </div>
+          </div>
+
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(./assets/media/slider/travellBlog.png);">
+            </div>
+          </div>
+          <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="40%" style="background-image: url(./assets/media/slider/todo.png);">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="home contact" id = 'contacts'>
+      <img src="assets/media/images/image 3.png" class="home__img__one home__image__display" alt=""> 
+      <img src="assets/media/images/image 4.png" class="home__img__two" alt="" >
+      <div class="contact__item">
+        <div class="contact__about">
+          <div class="contact__text">
+            <span class="contact__span home__left__span home__about__span"></span>
+            <div class=" contact__title home__left__title home__about__title">GOT A QUESTION, Proposalor project or want to work together on something? feel free to reach out.</div>
+          </div>
+          <a href="mailto:vaselesstolarov813@gmail.com" class="contact__email">vaselesstolarov813@gmail.com</ф>
+        </div>
+        <div class="contact__links">
+          <a href="https://github.com/vaseles" target="_blank" class="btn"><span class="btn__span" target="_blank">github</span></a>
+          <a href="https://t.me/baseles" class="btn" target="_blank"><span class="btn__span">telegram</span></a>
+          <a href="https://www.quora.com/profile/Vaseles" target="_blank" class="btn"><span class="btn__span">quora</span></a>
+          <a href="https://twitter.com/StolarovVaseles" target="_blank" class="btn"><span class="btn__span">twitter</span></a>
+          <a href="https://codepen.io/Vaseles" target="_blank" class="btn"><span class="btn__span">codepen</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/libraries/swiper.js/swiper-bundle.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
